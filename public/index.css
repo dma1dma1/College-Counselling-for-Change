@@ -81,11 +81,16 @@ body {
     font-weight: bold;
 }
 
-.panels {
+.wrapper > h3 {
+    font-size: large;
+    text-align: center;
+}
+
+.other-content {
     padding-top: 5%;
 }
 
-.panels > .description {
+.other-content > .description {
     width: 75%;
     padding: 1rem 0rem;
 }
