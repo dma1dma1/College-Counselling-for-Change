@@ -1,0 +1,25 @@
+{
+  "name": "ccc",
+  "version": "1.0.0",
+  "description": "Mock Website",
+  "main": "server.js",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon"
+  },
+  "nodemonConfig": {
+    "signal": "SIGTERM",
+    "watch": [
+      "lib",
+      "server.js"
+    ]
+  },
+  "author": "Daniel Ma",
+  "license": "ISC"
+}
