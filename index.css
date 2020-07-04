@@ -94,3 +94,19 @@ body {
     width: 75%;
     padding: 1rem 0rem;
 }
+
+.img-fluid {
+    max-height: 50%;
+}
+
+.charity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.charity > h4.title {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
