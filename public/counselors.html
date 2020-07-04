@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Charities</title>
+        <title>Counselors</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,6 +30,8 @@
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" 
             crossorigin="anonymous"></script>
+        
+        <script src="modals.js"></script>
         
         <div class="container">
             <nav class="navbar navbar-expand-md">
@@ -62,24 +64,42 @@
         <div class="container">
             <div class="other-content charities wrapper">
                 <h2 class="heading">
-                    Charities
+                    Counselors
                 </h2>
                 <h3 class="description">
-                    Click below to learn more about each charity!
+                    Meet the team!
                 </h3>   
             </div>
             <div class="row features">
-                <div class="col-lg-4 col-md-4 col-sm-12 feature">
+                <div class="col-lg-4 col-md-4 col-sm-12 counselor" data-toggle="Modal">
                     <h4 class="title">Albert</h4>
-                    <img src="images/bcf.png" class="img-fluid">
-                    <p>Blurb about the Brooklyn Community Foundation. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu.</p>
+                    <img src="images/Albert.jpeg" class="img-fluid">
+                    <p>Computer Science</p>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 feature">
+                <div class="modal" id="Albert" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Modal title</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Modal body text goes here.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 counselor">
                     <h4 class="title">SBU Covid-19 Action Fund</h4>
                     <img src="images/sbu.png" class="img-fluid">
                     <p>Blurb about the SBU Covid-19 Action Fund. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu.</p>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 feature">
+                <div class="col-lg-4 col-md-4 col-sm-12 counselor">
                     <h4 class="title">Teach For America</h4>
                     <img src="images/tfa.png" class="img-fluid">
                     <p>Blurb about Teach For America. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu.</p>
