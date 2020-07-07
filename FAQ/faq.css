@@ -1,36 +1,31 @@
-.panel-group .panel {
-  border-radius: 0;
-  box-shadow: none;
-  border-color: #EEEEEE;
+.card,
+.card-header {
+    background-color: transparent;
+    border: none;
+    padding: 0;
 }
 
-.panel-default > .panel-heading {
-  padding: 0;
-  border-radius: 0;
-  color: #212121;
-  background-color: #FAFAFA;
-  border-color: #EEEEEE;
+.card-body {
+    padding: .5rem 1.25rem;
 }
 
-.panel-title {
-  font-size: 14px;
+.question,
+.question:focus,
+.question:not(:disabled):not(.disabled).focus {
+    color: #000000;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: none !important;
+    text-decoration: none !important;
 }
 
-.panel-title > a {
-  display: block;
-  padding: 15px;
-  text-decoration: none;
+.question:active,
+.question:not(:disabled):not(.disabled):active {
+    color: #004b52 !important;
+    box-shadow: none !important;
 }
 
-.more-less {
-  float: right;
-  color: #212121;
-}
-
-.panel-default > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #EEEEEE;
-}
-
-body {
-  background-color: #edf6f9;
+.question:hover {
+    color: #006d77;
 }
