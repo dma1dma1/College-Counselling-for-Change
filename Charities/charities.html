@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Charities</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- These two lines provide automatic page and style reloading when files change -->
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/lib/client/updater.js" defer></script>
+
+        <link 
+            rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="../index.css">
+        <link rel="stylesheet" href="charities.css">
+        
+    </head>
+    <body>
+        <script
+			src="https://code.jquery.com/jquery-3.5.1.min.js"
+			integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous">
+        </script>
+        <script 
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+            crossorigin="anonymous">
+        </script>
+        <script 
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" 
+            crossorigin="anonymous">
+        </script>
+        
+        <!-- NAVBAR -->
+        <div class="container fixed">
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="../index.html">Logo</a>
+                <button class="btn btn-primary" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScxXCjBwzVvIGtgp5hPSRqIrc9T8dCQ_Pfu6XHhXwGHlh2YHg/viewform');">Sign up now!</button>
+                <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../panels.html">Panels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="charities.html">Charities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Counselors/counselors.html">Counselors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../FAQ/faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <!--Content-->
+        <main>
+            <div class="container">
+                <div class="other-content wrapper">
+                    <h2 class="heading">
+                        Charities
+                    </h2>
+                    <h3 class="description">
+                        Click below to learn more about each charity!
+                    </h3>   
+                </div>
+                <div class="row">
+    
+                    <!--BCF-->
+                    <div class="col-lg-6 col-md-6 col-sm-12 feature" data-toggle="modal" data-target="#bcf">
+                        <h4 class="title">Brooklyn Community Foundation</h4>
+                        <img src="images/Brooklyn.png" class="img-fluid">
+                    </div>
+                    <div class="modal" id="bcf" tabindex="-1" role="dialog" aria-labelledby="bcf" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Brooklyn Community Foundation</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <img src="images/Brooklyn.png" class="img-fluid">
+                                <div class="centered">
+                                    <button class="btn btn-secondary" onclick="window.open('https://www.brooklyncommunityfoundation.org/for-donors/support-community-fund');">Donate!</button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>Why this cause is important to us</h5>
+                                    <p>
+                                        In order to recognize the fact that there are many families that struggle on a 
+                                        daily basis to put food on the table as well as pay rent, we are proud to 
+                                        support the Brooklyn Community Foundation and its work to fight poverty and 
+                                        inequality. 
+                                    </p>
+                                    <p>
+                                        While being the largest and most populous borough in New York City, 
+                                        Brooklyn is also home to much wealth disparity and racial inequality. As of 
+                                        2019 the total population of Brooklyn was over two and a half million people 
+                                        with about 19% of those residents living below the poverty line. To add onto 
+                                        this, over three thousand residents of Brooklyn are imprisoned every year, 
+                                        30% of renters spend more than half of their income on rent alone, and 
+                                        Brooklyn ranks third in the state of New York for income inequality. Due 
+                                        to issues like this, The Brooklyn Community Foundation has made it their 
+                                        vision to create, “A fair and just Brooklyn, built on dignity and respect, 
+                                        where all residents have the opportunity to participate and prosper.” 
+                                    </p>
+                                    <p>
+                                        In order to achieve this goal and help those most in need, the Brooklyn 
+                                        Community Foundation works with members of its own community as well as 
+                                        local nonprofits in order to learn what to prioritize and how to make the 
+                                        most of their platform and donations. With 70% of Brooklynites being people 
+                                        of color, this foundation understands the need to look at these issues 
+                                        through a Racial Justice Lens in order to address systemic racial injustices 
+                                        and not overlook the issues that are heavily affected by one’s skin color.
+                                    </p>
+                                    <h5>Where your contribution will go</h5>
+                                    <p>
+                                        When making your donation, you will have the option to donate to one of five funds: 
+                                        the COVID-19 Response Fund, the Community Fund, the Immigrant Rights Fund, the Invest 
+                                        in Youth Fund, and the Racial Equity Fund.
+                                    </p>
+                                    <p>
+                                        The Racial Equity Fund focuses on initiatives that are meant to help people of color 
+                                        in Brooklyn determine their own sustainable future. Through the use of grantmaking, 
+                                        advocacy, and professional development, this foundation looks to create justice for 
+                                        the people of Brooklyn.
+                                    </p>
+                                    <p>
+                                        In the Invest in Youth initiative, the Brooklyn Community Foundation has donated over 
+                                        $2.5 million dollars annually to nonprofits. The aim of this program is to promote 
+                                        youth leadership and provide thousands of young people with the economic and 
+                                        educational opportunities that they might not otherwise have. The Foundation works 
+                                        to help the people of Brooklyn by working with local leaders to understand where the 
+                                        needs are and the resources needed to address them. By managing their resources 
+                                        effectively they have built their asset base and established relationships with 
+                                        experts in order to innovate, build on current projects and sustain their amazing work.
+                                    </p>
+                                    <p>
+                                        The COVID-19 Response Fund and Immigrant Rights Fund also seek to address systemic 
+                                        challenges against marginalized groups across New York City, and the Community Fund 
+                                        is a flexible fund to address all of the initiatives undertaken by the Brooklyn Community 
+                                        Foundation.
+                                    </p>
+                                    <h5>Resources</h5>
+                                    <p>
+                                        Learn more about these five initiatives 
+                                        <a class="inline" href="https://www.brooklyncommunityfoundation.org/for-donors/support-community-fund" target="_blank"><b><i>here</i></b></a>.
+                                    </p>
+                                    <p>
+                                        Learn more about the Brooklyn Community Foundation's Racial Justice Lens 
+                                        <a class="inline" href="https://www.brooklyncommunityfoundation.org/about/our-racial-justice-lens" target="_blank"><b><i>here</i></b></a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!--Erase Racism-->
+                    <div class="col-lg-6 col-md-6 col-sm-12 feature" data-toggle="modal" data-target="#erase">
+                        <h4 class="title">Erase Racism NY</h4>
+                        <img src="images/Erase racism.png" class="img-fluid">
+                    </div>
+                    <div class="modal" id="erase" tabindex="-1" role="dialog" aria-labelledby="erase" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Erase Racism NY</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <img src="images/Erase racism.png" class="img-fluid">
+                                <div class="centered">
+                                    <button class="btn btn-secondary" onclick="window.open('https://erase.secure.nonprofitsoapbox.com/donate');">Donate!</button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>Why this cause is important to us</h5>
+                                    <p>
+                                        Long Island is amongst the 10 most racially segregated metropolitan areas in 
+                                        the United States, impacting housing, schooling, and diversity. During the 
+                                        mid-20th century, policies were put in place to ensure that mass-scale 
+                                        affordable housing was for white potential residents only. ERASE Racism has 
+                                        filed multiple civil rights complaints regarding violations made in the 
+                                        Affirmatively Further Fair Housing (AFFH). The AFFH is a part of the Fair 
+                                        Housing Act (FHA). It is intended to prevent discrimination and reverse 
+                                        preexisting segregation on the island.
+                                    </p>
+                                    <p>
+                                        Racial disparities in school discipline interferes with students ability to 
+                                        learn and negatively impact their relationship and outlook on education. In 
+                                        2019, a study found that Black students are 3x more likely to be suspended or 
+                                        expelled when compared to their white counterparts. In conjunction with this, 
+                                        Black students are more likely to be removed from classrooms for subjective 
+                                        offenses. These statistics indicate an implicit bias on educators parts, which 
+                                        ERASE Racism tries to prevent or stop. In the education system, ERASE Racism 
+                                        promotes integration, advocating for benefits of learning environment diversity, 
+                                        diversity-based curriculum topics, outreach to diverse students, and the 
+                                        recruitment and retainment of teachers of color. 
+                                    </p>
+                                    <p>
+                                        ERASE Racism’s Partnership for Racial Equity is a collective of individuals dedicated 
+                                        to educating themselves and others about policies and impacts of structural racism. 
+                                        They hold events and forums on LI to begin dialogues about and discuss action items 
+                                        against racial discrimination.
+                                    </p>
+                                    <p>
+                                        ERASE Racism intends on attacking issues in housing and education by spearheading public 
+                                        policy advocacy and other initiatives to promote racial equity on Long Island. Along 
+                                        with this, they participate in a wide variety of research projects, to educate and 
+                                        consult in activities that address structural and institutionalized racism. We have 
+                                        chosen to support ERASE Racism in order to aid in their goal of changing communities 
+                                        so that no person’s available opportunities are inhibited by their race or ethnicity. 
+                                        In past years, the Three Village Central School District has had several students who 
+                                        serve as part of ERASE Racism’s student ambassadors.
+                                    </p>
+                                    <h5>Financial Breakdown</h5>
+                                    <p>
+                                        2019 Breakdown:
+                                    </p>
+                                    <img src="images/ER Financial.png" class="img-fluid">
+                                    <p>
+                                        More on financials 
+                                        <a class="inline" href="http://www.eraseracismny.org/storage/2019_Audited_Financial_Statments.pdf" target="_blank"><b><i>here</i></b></a>.
+                                    </p>
+                                    <h5>Resources</h5>
+                                    <p>
+                                        <a class="inline" href="http://www.eraseracismny.org/our-work/housing" target="_blank"><b><i>Inclusive Housing Program</i></b></a>.
+                                    </p>
+                                    <p>
+                                        <a class="inline" href="http://www.eraseracismny.org/our-work/education" target="_blank"><b><i>Education Equity Initiative</i></b></a>.
+                                    </p>
+                                    <p>
+                                        <a class="inline" href="http://www.eraseracismny.org/our-work/partnership-for-racial-equity" target="_blank"><b><i>Partnership for Racial Equality</i></b></a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!--TFA-->
+                    <div class="col-lg-6 col-md-6 col-sm-12 feature" data-toggle="modal" data-target="#tfa">
+                        <h4 class="title">Teach For America</h4>
+                        <img src="images/tfa.png" class="img-fluid">
+                    </div>
+                    <div class="modal" id="tfa" tabindex="-1" role="dialog" aria-labelledby="tfa" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Teach For America</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <img src="images/TFA.png" class="img-fluid">
+                                <div class="centered">
+                                    <button class="btn btn-secondary" onclick="window.open('https://www.teachforamerica.org/where-we-work/new-york/support-our-work');">Donate!</button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>Why this cause is important to us</h5>
+                                    <p>
+                                        Many public schools around the country are underfunded, especially in marginalized 
+                                        and impoverished communities. These schools are unable to support their students 
+                                        fully, which leads students to drop out. Low-income students are less likely 
+                                        to graduate high school. In 2017, students in low-income families dropped out of 
+                                        high school at twice the rate of students in higher-income families. This 
+                                        education crisis in low-income communities intersects with the struggle for 
+                                        racial equality, as children of color are more than two times as likely as white 
+                                        children to be born into poverty. Students of color perform far worse on the NAEP 
+                                        assessment (known colloquially as “The Nation’s Report Card”) than their white 
+                                        counterparts. In the reading section of the NAEP, Black and Hispanic students’ 
+                                        average scores were 25 points below the scores of their white classmates. This 
+                                        difference is the equivalence of about two grade levels. The disparity in access 
+                                        to quality education has long-lasting impacts on the opportunities later in life 
+                                        that these children will encounter. Teach For America refers to this disparity as 
+                                        the “opportunity gap.” We have chosen to support Teach For America because its 
+                                        mission is to close the opportunity gap in U.S. public schools, by providing the 
+                                        resources and opportunities for all students to succeed.
+                                    </p>
+                                    <p>
+                                        The way TFA aims to do this is by recruiting and training adults to educate 
+                                        students in public schools for two years. The TFA philosophy is that there is 
+                                        potential in every child, and they seek out people that fundamentally believe 
+                                        in this principle. They currently have 6,190 members teaching 355,500 students 
+                                        in all grade levels and subject areas. After serving, these teachers join the 
+                                        TFA alumni network and continue to support TFA’s mission in their future careers. 
+                                        TFA creates job opportunities for these marginalized groups. Half of the people in 
+                                        the TFA corps identify as people of color, and half come from low-income backgrounds. 
+                                        Furthermore, more than 1,000 current TFA corps members had been taught by TFA 
+                                        teachers when they were students. TFA teaches educators to be cognizant of the 
+                                        obstacles that low-income students and students of color face.
+                                    </p>                                    
+                                    <h5>Financial Breakdown</h5>
+                                    <img src="images/TFA Financials.jpg" class="img-fluid">
+                                    <h5>Resources</h5>
+                                    <p>
+                                        <a class="inline" href="https://www.teachforamerica.org/what-we-do" target="_blank"><b><i>Teach For America: What We Do</i></b></a>.
+                                    </p>
+                                    <p>
+                                        <a class="inline" href="https://files.eric.ed.gov/fulltext/ED567864.pdf" target="_blank"><b><i>A Look at the Education Crisis: Tests, Standards, and the Future of American Education (Center for American Progress)</i></b></a>.
+                                    </p>
+                                    <p>
+                                        <a class="inline" href="https://drive.google.com/file/d/14TPetxSESJqiafWHgmNWMME6aV3Nlr3q/view" target="_blank"><b><i>Teach For America NY Annual Report 2018</i></b></a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!--How To-->
+                    <div class="col-lg-6 col-md-6 col-sm-12 feature" data-toggle="modal" data-target="#tutorial">
+                        <h4 class="title">How to Donate</h4>
+                        <img src="images/Donation.png" class="img-fluid">
+                    </div>
+                    <div class="modal" id="tutorial" tabindex="-1" role="dialog" aria-labelledby="tutorial" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Instructions</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <img src="images/Donation.png" class="img-fluid">
+                                <div class="modal-body">
+                                    <p>
+                                        Thank you for supporting one of our vetted social causes!
+                                    </p>
+                                    <h5>How to Donate</h5>
+                                    <ol>
+                                        <li>
+                                            Go to the link of the charity you'd like to donate to. The links can be found in the cards on the
+                                            <a class="inline" href="charities.html" target="_blank"><b><i>Charities Page</i></b></a> and also on the
+                                            <a class="inline" href="https://docs.google.com/forms/d/e/1FAIpQLScxXCjBwzVvIGtgp5hPSRqIrc9T8dCQ_Pfu6XHhXwGHlh2YHg/viewform" target="_blank"><b><i>sign up form</i></b></a>.
+                                        </li>
+                                        <li>
+                                            On the pages, look for a button or link that says [Donate!].
+                                        </li>
+                                        <li>
+                                            Donate either $30 for one session or $70 for 3 sessions. If you'd like more sessions, contact us directly at 
+                                            <a class="inline" href="mailto:threevccc@gmail.com"><b><i>threevccc@gmail.com</i></b></a>.
+                                        </li>
+                                        <li>
+                                            After receiving the payment confirmation email, there should be a PDF attached to the email. Check for any 
+                                            sensitive information and forward the FULL EMAIL to 
+                                            <a class="inline" href="mailto:threevccc@gmail.com"><b><i>threevccc@gmail.com</i></b></a>.
+                                        </li>
+                                        <li>
+                                            If there's any information you deem too sensitive to be shared, follow the instructions 
+                                            <a class="inline" href="https://docs.google.com/document/d/1sLAwk50pxaLlT_2QoLJgQJcsImOamjLvHtHiV0iIfH8/edit"><b><i>here</i></b></a> 
+                                            to redact information. Make sure donation amount is still visible.
+                                        </li>
+                                        <li>
+                                            Donation complete! We will match you with a counselor and they will reach out to you directly in your email. 
+                                            Make sure to check all inboxes to ensure emails don't get lost.
+                                        </li>
+                                        <li>
+                                            Check out the additional resources on the 
+                                            <a class="inline" href="../index.html" target="_blank"><b><i>Welcome Page</i></b></a>
+                                            to learn more about social activism. These issues don't go away once they stop 'trending'!
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
