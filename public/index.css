@@ -138,8 +138,7 @@ a.inline:hover {
 
 ul.list > li {
     padding-top: .5rem;
-    word-wrap: break-word;
-    max-width: inherit;
+    overflow-wrap: break-word;
 }
 
 ul.list > li.first {
