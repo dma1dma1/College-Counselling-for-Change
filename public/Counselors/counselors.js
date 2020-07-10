@@ -26,5 +26,4 @@ const appendCounselors = () => {
     }
 }
 
-/* Uncomment for dynamic allocation */
-//appendCounselors();
+appendCounselors();
