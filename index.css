@@ -5,12 +5,18 @@ body {
 }
 
 /* General elements */
+.btn-primary {
+    border-radius: 0;
+    border-width: 2px;
+    font-weight: 600;
+}
 
 .btn-primary,
 .btn-primary:focus,
 .btn-primary:not(:disabled):not(.disabled).focus {
-    background-color: #006d77;
+    background-color: transparent;
     border-color: #006d77;
+    color: black;
     box-shadow: none !important;
 }
 
@@ -22,21 +28,35 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #005e66 !important;
+    background-color: #badedb !important;
+    color: black;
     border-color: #005e66 !important;
+}
+
+div.container {
+    height: 100%;
+}
+
+a {
+    color: #000000;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #006d77;
+    text-decoration: none;
 }
 
 /* Navigation Bar */
 
 .navbar {
     padding: .5rem 0rem !important;
+    /*background-color: #ffddd2;*/
 }
 
 .nav-link,
 .navbar-brand {
-    color: #000000;
-    font-weight: bold;
-    cursor: pointer;
+    font-weight: 600;
 }
 
 .nav-link {
@@ -48,7 +68,6 @@ body {
     color: #006d77;
 }
 
-
 .navbar-collapse {
     justify-content: flex-end;
 }
@@ -58,27 +77,39 @@ body {
 .main {
     padding-top: 15%;
     text-align: center;
-}
-
-.main > .description {
-    width: 75%;
-    padding: 1rem 0rem;
+    align-items: center;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.wrapper > h1.heading {
+.wrapper > .description {
+    width: 90%;
+    padding: 0rem 1rem;
+}
+
+.wrapper > .first {
+    padding-top: 0rem;
+}
+
+.wrapper > h1 {
     font-size: xxx-large;
     font-weight: bold;
 }
 
-.wrapper > h2.heading {
+.wrapper > h1.heading {
+    margin-bottom: 2rem;
+}
+
+.wrapper > h2 {
     font-size: x-large;
     font-weight: bold;
+}
+
+.wrapper > h2.heading {
+    margin-bottom: 1rem;
 }
 
 .wrapper > h3 {
@@ -86,18 +117,56 @@ body {
     text-align: center;
 }
 
-.other-content {
-    padding-top: 5%;
+section#intro {
+    padding-bottom: 200px;
 }
 
-.other-content > .description {
-    width: 75%;
-    padding: 1rem 0rem;
+.content {
+    width: 90%;
+    float: right;
+    padding-bottom: 2rem;
+}
+
+a.inline {
+    color: #a84724;
+}
+
+a.inline:hover {
+    background-color: #e0f0f5;
+    border-radius: 1px;
+}
+
+ul.list > li {
+    padding-top: .5rem;
+}
+
+ul.list > li.first {
+    padding-top: 0rem;
 }
 
 .img-fluid {
     max-height: 40%;
 }
+
+
+
+
+
+
+
+
+
+
+/* MOVE OUT OF THIS FILE */
+.other-content {
+    padding-top: 5%;
+}
+
+.other-content > .description {
+    width: 80%;
+    padding: 1rem 0rem;
+}
+
 
 .feature,
 .counselor {
