@@ -34,7 +34,7 @@
             crossorigin="anonymous"></script>
         
         <!-- NAVBAR -->
-        <div class="container fixed">
+        <div class="container-fluid fixed">
             <nav class="navbar static-top navbar-expand-md">
                 <a class="navbar-brand" href="../index.html">CCC</a>
                 <button class="btn btn-primary" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScxXCjBwzVvIGtgp5hPSRqIrc9T8dCQ_Pfu6XHhXwGHlh2YHg/viewform');">Sign up now!</button>
@@ -62,86 +62,51 @@
         
         <!--Content-->
         <main>
-            <div class="container">
-                <div class="other-content wrapper">
-                    <h2 class="heading">
+            <div class="container-fluid">
+                <div class="other-content wrapper sidebar">
+                    <h1 class="heading">
                         Counselors
-                    </h2>
-                    <h3>
+                    </h1>
+                    <h2>
                         Meet the team!
-                    </h3>
+                    </h2>
                     <p>
-                        Click on our profiles to learn more!
+                        These are the people that make this initiative possible. 
+                        We look forward to meeting everyone! Click on our profiles to learn more!
                     </p>
                 </div>
     
                 <div class="row" id="counselors">
-
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="profile" data-toggle="modal" data-target="#Albert">
-                            <img src="ProfilePics/Albert.jpg" class="img-fluid">
-                            <div class="body">
-                                <h4 class="title">Albert Tian</h4>
-                            </div>
-                        </div>
-                    </div>                    
-                    <div class="modal fade" id="Albert" tabindex="-1" role="dialog" aria-labelledby="Albert" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <img src="ProfilePics/Albert.jpg" class="img-fluid">
-                                    <div class="info">
-                                        <h3 class="title">Albert Tian</h3>
-                                        <p class="major-school">Electrical Engineering and Computer Science @ University of California, Berkeley</p>
-                                        <p class="major"></p>
-                                        <h5>Bio</h5>
-                                        <p class="bio">
-                                            Hi everyone! I’m Albert, rising sophomore at UC Berkeley. 
-                                            I love working out, fencing and urban dancing. On campus, 
-                                            I’m involved with Asian American Association and Innovative Design at 
-                                            Cal. I’m super excited to launch CCC; a lot of really talented people 
-                                            put together an incredible initiative and I’m so grateful for their 
-                                            support. Look forward to meeting y’all!
-                                        </p>
-                                        <h5 class="projects">Ongoing Projects</h5>
-                                        <ul class="project-list">
-                                            <li>Co-founder of huddle, a video chat startup</li>
-                                            <li>EE intern @ Sunrise Technologies</li>
-                                        </ul>
-                                    </div>                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
     
                     <!-- Counselor Template -->
                     <template id="counselor-template">
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="card" data-toggle="modal" data-target="#Albert">
-                                <img src="#" class="card-img-top">
-                                <div class="card-body">
-                                    <h4 class="card-title">Name Here</h4>
-                                    <p class="school">School</p>
-                                    <p class="major">Major</p>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="profile" data-toggle="modal" data-target="#Albert">
+                                <img src="ProfilePics/Albert.jpg" class="img-fluid">
+                                <div class="body">
+                                    <h4 class="name"></h4>
                                 </div>
                             </div>
                         </div>                    
-                        <div class="modal" id="Albert" tabindex="-1" role="dialog" aria-labelledby="Albert" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal fade" id="Albert" tabindex="-1" role="dialog" aria-labelledby="Albert" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">Modal title</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <p>Modal body text goes here.</p>
+                                        <img src="ProfilePics/Albert.jpg" class="img-fluid">
+                                        <div class="info">
+                                            <h3 class="name"></h3>
+                                            <p class="major-school"></p>
+                                            <p class="major"></p>
+                                            <h5>Bio</h5>
+                                            <p class="bio"></p>
+                                            <h5 class="projects">Ongoing Projects</h5>
+                                            <ul class="project-list"></ul>
+                                        </div>                                    
                                     </div>
                                 </div>
                             </div>

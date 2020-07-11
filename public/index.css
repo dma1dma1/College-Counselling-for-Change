@@ -89,12 +89,13 @@ a:hover {
 div.fixed {
     position: fixed;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0%);
+    background-color: #edf6f9 !important;
+    padding: 0vh 5%;
 }
 
 .navbar {
     padding: .5rem 0rem !important;
-    background-color: #edf6f9 !important;
     display: flex;
 }
 

@@ -12,18 +12,29 @@ const appendCounselors = () => {
         let id = "counselor-" + i;
 
         /* Set Card Attributes */
-        instance.querySelector(".card-img-top").src = counselor.imageLink;
-        instance.querySelector(".card-title").innerHTML = counselor.name;
-        instance.querySelector(".school").innerHTML = counselor.school;
-        instance.querySelector(".major").innerHTML = counselor.major;
+        for (let image of instance.querySelectorAll(".img-fluid")) {
+            image.src = counselor.imageLink;
+        }
+        for (let title of instance.querySelectorAll(".name")) {
+            title.innerHTML = counselor.name;
+        }
+        instance.querySelector(".major-school").innerHTML = counselor.major + " @ " + counselor.school;
+        instance.querySelector(".bio").innerHTML = counselor.bio;
+        let projectList = instance.querySelector(".project-list")
+        for (let project of counselor.projects) {
+            let item = document.createElement("li");
+            item.innerHTML = project;
+            projectList.appendChild(item);
+        }
 
         /* Set Modal Links */
-        instance.querySelector(".card").setAttribute("data-target", '#' + id);
+        instance.querySelector(".profile").setAttribute("data-target", '#' + id);
         instance.querySelector(".modal").setAttribute("id", id);
         instance.querySelector(".modal").setAttribute("aria-labelledby", id);
 
-        counselorList.appendChild(instance)
+        counselorList.appendChild(instance);
+        i++;
     }
 }
 
-//appendCounselors();
+appendCounselors();
