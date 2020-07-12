@@ -176,7 +176,8 @@ section#intro {
 
 .content {
     width: 90%;
-    float: right;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 2rem;
 }
 
