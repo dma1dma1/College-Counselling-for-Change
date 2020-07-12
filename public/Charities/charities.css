@@ -2,7 +2,7 @@
     border-radius: 0;
     border-width: 2px;
     font-weight: 600;
-    width: 75%;
+    width: 70%;
 }
 
 .btn-secondary,
@@ -28,6 +28,10 @@
 .centered {
     display: flex;
     justify-content: center;
+}
+
+.modal-body {
+    padding: 3vh 8vh 2vh 8vh;
 }
 
 .modal-body > h5 {

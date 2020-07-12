@@ -2,6 +2,12 @@ body {
     padding: 0;
     margin: 0;
     background-color: #edf6f9;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
 }
 
 /* General elements */
@@ -52,7 +58,7 @@ a:hover {
 
 /* Modals */
 .modal-content {
-    background-color: #EDF6F9;
+    background-color: whitesmoke;
 }
 
 .modal-header .close:focus {
@@ -86,11 +92,11 @@ a:hover {
 }
 
 /* Navigation Bar */
-div.fixed {
+div.container-fluid.fixed {
     position: fixed;
     left: 50%;
     transform: translate(-50%, 0%);
-    background-color: #edf6f9 !important;
+    background-color: #36444a !important;
     padding: 0vh 5%;
 }
 
@@ -100,7 +106,9 @@ div.fixed {
 }
 
 .nav-link,
-.navbar-brand {
+.navbar-brand,
+.nav-btn {
+    color: #f0f7fa;
     font-weight: 600;
 }
 
@@ -110,6 +118,11 @@ div.fixed {
 
 .nav-link:hover,
 .navbar-brand:hover {
+    color: #0096a3;
+}
+
+.nav-link:active,
+.navbar-brand:active {
     color: #006d77;
 }
 
@@ -132,20 +145,6 @@ div.fixed {
     padding-top: 20vh;
     text-align: center;
     align-items: center;
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.wrapper > .description {
-    width: 90%;
-    padding: 0rem 1rem;
-}
-
-.wrapper > .first {
-    padding-top: 0rem;
 }
 
 .wrapper > h1 {
@@ -200,13 +199,56 @@ ul.list > li.first {
 }
 
 /* Other page headers */
-.other-content {
-    padding-top: 10vh;
-    align-items: center;
+main .container-fluid {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5vh;
+    width: 90%;
 }
 
-.other-content > .description {
-    width: 80%;
+.other-content {
+    padding-top: 10vh;
+    width: 25%;
+    margin-right: 15vh;
+    align-items: flex-start;
+}
+
+.other-content p {
+    font-size: 1.2rem;
+}
+
+.sidebar {
+    position: fixed;
+}
+
+.row {
+    width: 75%;
+    margin-left: 35%;
+    padding-top: 10vh;
+}
+
+/* Other pages mobile view */
+@media screen and (max-width: 768px) {
+    main .container-fluid {
+       flex-direction: column;
+       padding-top: 0vh;
+    }
+
+    .other-content {
+        width: 100%;
+        margin-right: 0vh;
+        align-items: flex-start;
+    }
+
+    .sidebar {
+        position: relative;
+    }
+
+    .row {
+        width: 100%;
+        margin-left: 0%;
+        padding-top: 1vh;
+    }
 }
 
 /* MOVE OUT OF THIS FILE */

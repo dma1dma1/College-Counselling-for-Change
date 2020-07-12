@@ -6,8 +6,8 @@ export default
             answer: "Yes! But we prefer you don't as we will try and match you based on your answers when you sign up."
         },
         {
-            question: "This is a question",
-            answer: "This is an answer"
+            question: "Can I sign up for more than 3 sessions?",
+            answer: "Yes! Please contact us directly at <a class='inline' href='mailto:threevccc@gmail.com'><b><i>threevccc@gmail.com</i></b></a> to discuss additional sessions."
         }
     ]
 }

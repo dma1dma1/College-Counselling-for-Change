@@ -18,6 +18,7 @@ const appendCounselors = () => {
         for (let title of instance.querySelectorAll(".name")) {
             title.innerHTML = counselor.name;
         }
+        instance.querySelector(".school").innerHTML = counselor.school
         instance.querySelector(".major-school").innerHTML = counselor.major + " @ " + counselor.school;
         instance.querySelector(".bio").innerHTML = counselor.bio;
         let projectList = instance.querySelector(".project-list")

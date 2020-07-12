@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="../index.css">
         <link rel="stylesheet" href="./counselors.css">
         <script type="module" src="counselors.js"></script>
-        
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <script
@@ -37,8 +37,8 @@
         <div class="container-fluid fixed">
             <nav class="navbar static-top navbar-expand-md">
                 <a class="navbar-brand" href="../index.html">CCC</a>
-                <button class="btn btn-primary" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScxXCjBwzVvIGtgp5hPSRqIrc9T8dCQ_Pfu6XHhXwGHlh2YHg/viewform');">Sign up now!</button>
-                <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-nav">
+                <button class="btn btn-primary nav-btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScxXCjBwzVvIGtgp5hPSRqIrc9T8dCQ_Pfu6XHhXwGHlh2YHg/viewform');">Sign up now!</button>
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-nav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="main-nav">
@@ -80,11 +80,12 @@
     
                     <!-- Counselor Template -->
                     <template id="counselor-template">
-                        <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
                             <div class="profile" data-toggle="modal" data-target="#Albert">
                                 <img src="ProfilePics/Albert.jpg" class="img-fluid">
                                 <div class="body">
                                     <h4 class="name"></h4>
+                                    <p class="school"></p>
                                 </div>
                             </div>
                         </div>                    
