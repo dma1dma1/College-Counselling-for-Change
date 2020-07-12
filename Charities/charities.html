@@ -16,7 +16,7 @@
             crossorigin="anonymous">
         <link rel="stylesheet" href="../index.css">
         <link rel="stylesheet" href="charities.css">
-        
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <script
@@ -39,8 +39,8 @@
         <div class="container-fluid fixed">
             <nav class="navbar navbar-expand-md">
                 <a class="navbar-brand" href="../index.html">CCC</a>
-                <button class="btn btn-primary" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScxXCjBwzVvIGtgp5hPSRqIrc9T8dCQ_Pfu6XHhXwGHlh2YHg/viewform');">Sign up now!</button>
-                <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-nav">
+                <button class="btn btn-primary nav-btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScxXCjBwzVvIGtgp5hPSRqIrc9T8dCQ_Pfu6XHhXwGHlh2YHg/viewform');">Sign up now!</button>
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-nav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="main-nav">
@@ -64,19 +64,25 @@
         
         <!--Content-->
         <main>
-            <div class="container">
-                <div class="other-content wrapper">
-                    <h2 class="heading">
+            <div class="container-fluid">
+                <div class="other-content wrapper sidebar">
+                    <h1 class="heading">
                         Charities
-                    </h2>
-                    <h3 class="description">
-                        Click below to learn more about each charity!
-                    </h3>   
+                    </h1>
+                    <p class="description">
+                        Click on the logos to learn more about each charity!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                    </p>
                 </div>
                 <div class="row">
     
                     <!--BCF-->
-                    <div class="col-lg-6 col-md-6 col-sm-12 feature" data-toggle="modal" data-target="#bcf">
+                    <div class="col-lg-6 col-md-12 col-sm-12 feature" data-toggle="modal" data-target="#bcf">
                         <img src="images/Brooklyn.png" class="img-fluid">
                     </div>
                     <div class="modal fade" id="bcf" tabindex="-1" role="dialog" aria-labelledby="bcf" aria-hidden="true">
@@ -163,7 +169,7 @@
                     </div>
     
                     <!--Erase Racism-->
-                    <div class="col-lg-6 col-md-6 col-sm-12 feature" data-toggle="modal" data-target="#erase">
+                    <div class="col-lg-6 col-md-12 col-sm-12 feature" data-toggle="modal" data-target="#erase">
                         <img src="images/Erase racism.png" class="img-fluid">
                     </div>
                     <div class="modal fade" id="erase" tabindex="-1" role="dialog" aria-labelledby="erase" aria-hidden="true">
@@ -243,7 +249,7 @@
                     </div>
     
                     <!--TFA-->
-                    <div class="col-lg-6 col-md-6 col-sm-12 feature" data-toggle="modal" data-target="#tfa">
+                    <div class="col-lg-6 col-md-12 col-sm-12 feature" data-toggle="modal" data-target="#tfa">
                         <img src="images/TFA.png" class="img-fluid">
                     </div>
                     <div class="modal fade" id="tfa" tabindex="-1" role="dialog" aria-labelledby="tfa" aria-hidden="true">
@@ -310,7 +316,7 @@
                     </div>
     
                     <!--How To-->
-                    <div class="col-lg-6 col-md-6 col-sm-12 feature" data-toggle="modal" data-target="#tutorial">
+                    <div class="col-lg-6 col-md-12 col-sm-12 feature" data-toggle="modal" data-target="#tutorial">
                         <img src="images/Donation.png" class="img-fluid">
                     </div>
                     <div class="modal fade" id="tutorial" tabindex="-1" role="dialog" aria-labelledby="tutorial" aria-hidden="true">

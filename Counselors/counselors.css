@@ -1,39 +1,15 @@
-main .container-fluid {
-    display: flex;
-    flex-direction: row;
-    padding-top: 10vh;
-    width: 90%;
-}
-
-.other-content {
-    width: 25%;
-    margin-right: 15vh;
-    align-items: flex-start;
-}
-
-.other-content p {
-    font-size: 1.2rem;
-}
-
-
-/* Sidebar */
-.sidebar {
-    position: fixed;
-}
-
 /* Profile Card */
 .profile {
-    
     margin-bottom: 4vh;
     cursor: pointer;
     border-radius: 5%;
     border: 1px solid black;
-    white-space: nowrap;
     justify-content: center;
 }
 
 .profile:hover {
     background-color: #e0f0f5;
+    border: 2px solid #0000B8;
 }
 
 .profile:active {
@@ -54,9 +30,8 @@ div.body {
     text-align: center;
 }
 
-#counselors {
-    width: 75%;
-    margin-left: 35%;
+div.body .school {
+    font-size: 1rem;
 }
 
 /* Modal */
@@ -103,29 +78,6 @@ li {
 
     .modal-body .info {
         width: 100%;
-    }
-
-    @media screen and (max-width: 768px) {
-        main .container-fluid {
-           flex-direction: column;
-           padding-top: 0vh;
-           align-items: center;
-        }
-
-        .other-content {
-            width: 100%;
-            margin-right: 0vh;
-            align-items: flex-start;
-        }
-
-        .sidebar {
-            position: relative;
-        }
-
-        #counselors {
-            width: 100%;
-            margin-left: 0%;
-        }
     }
 }
 
