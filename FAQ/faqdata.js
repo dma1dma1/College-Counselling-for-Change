@@ -7,7 +7,7 @@ export default
         },
         {
             question: "Can I sign up for more than 3 sessions?",
-            answer: "Yes! Please contact us directly at <a class='inline' href='mailto:threevccc@gmail.com'><b><i>threevccc@gmail.com</i></b></a> to discuss additional sessions."
+            answer: "Yes! Please contact us directly at <a class='inline' href='mailto:threevccc@gmail.com'><strong><em>threevccc@gmail.com</em></strong></a> to discuss additional sessions."
         }
     ]
 }
