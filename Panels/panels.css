@@ -38,29 +38,36 @@
 }
 
 /* Flip functionality */
-.flip-card-outer {
+.flip-card-outer {    
     perspective: 1000px;
+    -webkit-perspective: 1000px;
 }
 
 .flip-card {
     transition: transform 1s;
+    -webkit-transition: transform 1s;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 }
 
 .flip-card div{
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .flip-card > .back {
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     transform: rotateY( 180deg );
+    -webkit-transform: rotateY( 180deg );
 }
 
 .front, .back {
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 }
 
 .flip-card.flipped {
     transform: rotateY( 180deg );
+    -webkit-transform: rotateY( 180deg );
 }
