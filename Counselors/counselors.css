@@ -17,13 +17,9 @@
 }
 
 .profile .img-fluid {
-    padding: 2vh 4vh 0vh 4vh;
+    padding: 4vh;
     margin-bottom: 1vh;
-    border-radius: 50%;
-}
-
-.profile h4.name {
-    font-size: 1.5rem;
+    border-radius: 50%/50%;
 }
 
 div.body {
