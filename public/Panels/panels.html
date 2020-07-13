@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Panels</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- These two lines provide automatic page and style reloading when files change -->
+        <script src="../socket.io/socket.io.js"></script>
+        <script src="../lib/client/updater.js" defer></script>
+
+        <link 
+            rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="../index.css">
+        <link rel="stylesheet" href="panels.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="panels.js" defer></script>
+    </head>
+    <body>
+        <script
+			src="https://code.jquery.com/jquery-3.5.1.min.js"
+			integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous">
+        </script>
+        <script 
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+            crossorigin="anonymous">
+        </script>
+        <script 
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" 
+            crossorigin="anonymous">
+        </script>
+
+        <!-- NAVBAR -->
+        <div class="container-fluid fixed">
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="../index.html">CCC</a>
+                <button class="btn btn-primary nav-btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScxXCjBwzVvIGtgp5hPSRqIrc9T8dCQ_Pfu6XHhXwGHlh2YHg/viewform');">Sign up now!</button>
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="panels.html">Panels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Charities/charities.html">Charities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Counselors/counselors.html">Counselors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../FAQ/faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <!--Content-->
+        <main>
+            <div class="container-fluid">
+                <div class="other-content sidebar wrapper">
+                    <h1 class="heading">
+                        Panels
+                    </h1>
+                    <p class="description">
+                        Our free, virtual panels will occur between <strong>July 21st and July 24th!</strong>
+                    </p>
+                    <p class="description">
+                        Each panel will take place at 5pm EST on the date specified.    
+                    </p>
+                    <p class="description">
+                        <a class="inline" href="https://docs.google.com/forms/d/e/1FAIpQLSfeOSw8z12Wu_bm28C63xrSJcEOxriWsxAle_aawLyzSTo78w/viewform" target="_blank"><strong><em>Sign up now!</em></strong></a>
+                        Space is <strong>Limited</strong>!
+                    </p>
+                </div>
+
+                <div class="row" id="panels">
+                    <div class="col-lg-4 col-md-6 col-sm-12 flip-card-outer">
+                        <div class="flip-card">
+                            <div class="front free">
+                                <img src="images/stem.png" class="img-fluid">
+                                <h3>STEM</h3>
+                                <h5>July 21st</h5>
+                            </div>
+                            <div class="back free">
+                                <ul>
+                                    <li>Stanford University</li>
+                                    <li>UC Trash Bears</li>
+                                </ul>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 flip-card-outer">
+                        <div class="flip-card">
+                            <div class="front full">
+                                <img src="images/social.png" class="img-fluid">
+                                <h3>Business</h3>
+                                <h5>July 22nd</h5>
+                            </div>
+                            <div class="back full">
+                                <p>This panel is full!</p>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 flip-card-outer">
+                        <div class="flip-card">
+                            <div class="front free">
+                                <img src="images/stem.png" class="img-fluid">
+                                <h3>Social Sciences</h3>
+                                <h5>July 21st</h5>
+                            </div>
+                            <div class="back free">
+                                <ul>
+                                    <li>Stanford University</li>
+                                    <li>UC Trash Bears</li>
+                                </ul>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 flip-card-outer">
+                        <div class="flip-card">
+                            <div class="front free">
+                                <img src="images/social.png" class="img-fluid">
+                                <h3>General</h3>
+                                <h5>July 24th</h5>
+                            </div>
+                            <div class="back free">
+                                <ul>
+                                    <li>Stanford University</li>
+                                    <li>UC Trash Bears</li>
+                                </ul>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 flip-card-outer">
+                        <div class="flip-card">
+                            <div class="front full">
+                                <img src="images/stem.png" class="img-fluid">
+                                <h3>Liberal Arts</h3>
+                                <h5>July 25th</h5>
+                            </div>
+                            <div class="back full">
+                                <p>This Panel is full!</p>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

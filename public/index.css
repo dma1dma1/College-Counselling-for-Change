@@ -223,7 +223,7 @@ main .container-fluid {
 }
 
 .row {
-    width: 75%;
+    width: auto;
     margin-left: 35%;
     padding-top: 10vh;
 }
