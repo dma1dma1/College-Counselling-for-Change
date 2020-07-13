@@ -48,6 +48,8 @@ div.body .school {
 }
 
 .modal-content {
+    height: auto;
+    width: auto;
     background-color: whitesmoke;
     color: black;
 }
