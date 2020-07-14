@@ -94,8 +94,6 @@ a:hover {
 /* Navigation Bar */
 div.container-fluid.fixed {
     position: fixed;
-    left: 50%;
-    transform: translate(-50%, 0%);
     background-color: #36444a !important;
     padding: 0vh 5%;
 }
