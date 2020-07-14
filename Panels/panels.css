@@ -2,11 +2,15 @@
     margin-bottom: 4vh;
 }
 
-.front{
+.front {
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+}
+
+.back {
+    padding: 2vh 4vh;
 }
 
 .free {
@@ -39,8 +43,8 @@
 
 /* Flip functionality */
 .flip-card-outer {    
-    perspective: 1000px;
-    -webkit-perspective: 1000px;
+    perspective: 500px;
+    -webkit-perspective: 500px;
 }
 
 .flip-card {
